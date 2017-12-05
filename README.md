@@ -1,19 +1,28 @@
 # ts3-change-user-avatar-by-nickname
-This bash script allows the owner of ts3 server to change a user's avatar by providing username, picture and path to teamspeak directory.
 
-SCRIPT IS NOT FULLY TESTED YET, BACKUP YOUR DATABASE AND AVATAR FILES BEFORE USING !!!! ESPECIALLY IF YOU HAVE MULTIPLE SERVER INSTANCES IN ONE DATABASE !!!
+BACKUP DATABASE AND TEAMSPEAK3 FOLDER BEFORE USING !!!! 
 
-Teamspeak 3 functionality doesn't allow admins or owners of teamspeak3 server to change user's avatar. But I don't accept that and have written this script so you can troll your teamspeak users for fun.
+First working version, tested only on 3.0.13.6 Teamspeak Server. 
 
-ts3chavatar.sh script needs 3 input parameters in order to work:
+<b><a href="https://github.com/cryptozealot/ts3-change-user-avatar-by-nickname/blob/master/ts3chavatar.sh">ts3chavatar.sh</a> allows the owner of ts3 server on a linux machine to change an user's avatar with given: username, picture and path to teamspeak directory. It does that by overwriting the old avatar file with the new one and editing the database to set new avatar hash.</b>
 
-<ul><li>nickname of user</li><li>full path of pic</li><li>full path where ts3 is installed</li></ul>
+\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
 
-<b>USAGE:</b>
+<b>Prerequisites:</b>
+<i>sqlite3</i>
+Install "sqlite3" with your packet manager:
+<blockquote>apt-get install sqlite3<blockquote>
+<blockquote>yum install sqlite3<blockquote>
+
+<b>Parameters</b>
+
+<ul><li>Nickname of user</li><li>Full path of picture</li><li>Full path where ts3 is installed</li></ul>
+
+<b>Usage</b>
 
 <blockquote><B>./ts3chavatar.sh {NICKNAME} {FULL_PATH_OF_PIC} {FULL_PATH_OF_TS3} </B></blockquote>
 
-<b>EXAMPLE:</b>
+<b>Example:</b>
 
 <blockquote>
 
@@ -22,13 +31,14 @@ ts3chavatar.sh script needs 3 input parameters in order to work:
 </blockquote>
 
 
-
-
-
 NOTES : 
 
-SQL Querries:
 
+TO DO: Get ts3 path automatically, multiple servers in one db ??
+
+SQL Querries for testing:
+
+<blockquote>
 get UID
 
 SELECT client_unique_id from clients where client_nickname='tester1';
@@ -44,3 +54,4 @@ UPDATE client_properties SET value='b3b3b8e6d973385716fb320b77331f78' WHERE iden
 get md5 to input in table 
 
 md5sum {filename}
+<blockquote>
