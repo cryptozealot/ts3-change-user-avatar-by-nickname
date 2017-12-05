@@ -14,11 +14,13 @@ Install "sqlite3" with your packet manager:
 <blockquote>apt-get install sqlite3</blockquote>
 <blockquote>yum install sqlite3</blockquote>
 
-<b>Parameters</b>
+<b>Parameters:</b>
 
 <ol><li>Nickname of user</li><li>Full path of picture</li><li>Full path of ts3 directory</li></ol>
 
-<b>Usage</b>
+<b>Usage:</b>
+
+Run as teamspeak user or root.
 
 <blockquote>./ts3chavatar.sh {NICKNAME} {FULL_PATH_OF_PIC} {FULL_PATH_OF_TS3} </blockquote>
 
@@ -26,17 +28,17 @@ Install "sqlite3" with your packet manager:
 
 <blockquote>
 
-./ts3chavatar.sh JohnDoe /home/ubuntu/JohnSelfie12.jpg /home/teamspeak/
+./ts3chavatar.sh JohnDoe /home/teamspeak/upload/JohnSelfie12.jpg /home/teamspeak/
 
 </blockquote>
 <br>
 That's it.
 
 <br>
-NOTES : 
+Notes : 
 
 
-TO DO: Get ts3 path automatically, validation, multiple servers in one db ??
+To Do: Get ts3 path automatically, validation, multiple servers in one db ??
 
 <br>
 
