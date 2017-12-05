@@ -6,7 +6,7 @@ First working version, tested only on 3.0.13.6 Teamspeak Server.
 
 <b><a href="https://github.com/cryptozealot/ts3-change-user-avatar-by-nickname/blob/master/ts3chavatar.sh">ts3chavatar.sh</a> allows the owner of ts3 server on a linux machine to change an user's avatar with given: username, picture and path to teamspeak directory. It does that by overwriting the old avatar file with the new one and editing the database to set new avatar hash.</b>
 
-\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+<br>
 
 <b>Prerequisites:</b>
 <i>sqlite3</i>
