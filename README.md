@@ -1,10 +1,10 @@
 # ts3-change-user-avatar-by-nickname
 
-BACKUP DATABASE AND TEAMSPEAK3 FOLDER BEFORE USING !!!! 
+BACKUP TEAMSPEAK3 FOLDER AND DATABASE BEFORE USING !!!! 
 
 First working version, tested only on 3.0.13.6 Teamspeak Server. 
 
-<b><a href="https://github.com/cryptozealot/ts3-change-user-avatar-by-nickname/blob/master/ts3chavatar.sh">ts3chavatar.sh</a> allows the owner of ts3 server on a linux machine to change an user's avatar with given: username, picture and path to teamspeak directory. It does that by overwriting the old avatar file with the new one and editing the database to set new avatar hash.</b>
+<b><a href="https://github.com/cryptozealot/ts3-change-user-avatar-by-nickname/blob/master/ts3chavatar.sh">ts3chavatar.sh</a> bash script allows a linux ts3 server owner to change an user's avatar by inputing: username, picture and path to teamspeak directory as arguments. It does that by overwriting the old avatar file with the new one and editing the database to set new avatar hash for user.</b>
 
 <br>
 
@@ -20,7 +20,7 @@ Install "sqlite3" with your packet manager:
 
 <b>Usage</b>
 
-<blockquote><B>./ts3chavatar.sh {NICKNAME} {FULL_PATH_OF_PIC} {FULL_PATH_OF_TS3} </B></blockquote>
+<blockquote>./ts3chavatar.sh {NICKNAME} {FULL_PATH_OF_PIC} {FULL_PATH_OF_TS3} </blockquote>
 
 <b>Example:</b>
 
@@ -36,9 +36,11 @@ That's it.
 NOTES : 
 
 
-TO DO: Get ts3 path automatically, multiple servers in one db ??
+TO DO: Get ts3 path automatically, validation, multiple servers in one db ??
 
-SQL Querries for testing:
+<br>
+
+sqlite3 Querries for testing:
 
 <blockquote>
 get UID
