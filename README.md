@@ -16,7 +16,7 @@ Install "sqlite3" with your packet manager:
 
 <b>Parameters</b>
 
-<ol><li>Nickname of user</li><li>Full path of picture</li><li>Full path where ts3 is installed</li></ol>
+<ol><li>Nickname of user</li><li>Full path of picture</li><li>Full path of ts3 directory</li></ol>
 
 <b>Usage</b>
 
