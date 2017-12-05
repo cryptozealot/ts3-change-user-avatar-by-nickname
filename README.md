@@ -9,14 +9,14 @@ First working version, tested only on 3.0.13.6 Teamspeak Server.
 <br>
 
 <b>Prerequisites:</b>
-<i>sqlite3</i>
+<i>sqlite3</i><p>
 Install "sqlite3" with your packet manager:
 <blockquote>apt-get install sqlite3</blockquote>
 <blockquote>yum install sqlite3</blockquote>
 
 <b>Parameters</b>
 
-<ul><li>Nickname of user</li><li>Full path of picture</li><li>Full path where ts3 is installed</li></ul>
+<ol><li>Nickname of user</li><li>Full path of picture</li><li>Full path where ts3 is installed</li></ol>
 
 <b>Usage</b>
 
@@ -26,11 +26,13 @@ Install "sqlite3" with your packet manager:
 
 <blockquote>
 
-./ts3chavatar.sh ts3user /home/ubuntu/picture123.jpg /home/teamspeak/
+./ts3chavatar.sh JohnDoe /home/ubuntu/JohnSelfie12.jpg /home/teamspeak/
 
 </blockquote>
+<br>
+That's it.
 
-
+<br>
 NOTES : 
 
 
