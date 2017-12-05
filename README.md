@@ -1,9 +1,27 @@
 # ts3-change-user-avatar-by-nickname
-This bash script allows the owner of ts3 server to change a user's avatar by username
+This bash script allows the owner of ts3 server to change a user's avatar by providing username, picture and path to teamspeak directory.
+
+SCRIPT IS NOT FULLY TESTED YET, BACKUP YOUR DATABASE AND AVATAR FILES BEFORE USING !!!!
+
+Teamspeak 3 functionality doesn't allow admins or owners of teamspeak3 server to change user's avatar. But I don't accept that and have written this script so you can troll your teamspeak users for fun.
+
+ts3chavatar.sh script needs 3 input parameters in order to work:
+
+<ul><li>nickname of user</li><li>full path of pic</li><li>full path where ts3 is installed</li></ul>
+
+<b>USAGE:</b>
+
+<blockquote><B>./ts3chavatar.sh {NICKNAME} {FULL_PATH_OF_PIC} {FULL_PATH_OF_TS3} </B></blockquote>
+
+<b>EXAMPLE:</b>
+
+<blockquote>
+
+./ts3chavatar.sh ts3user /home/ubuntu/picture123.jpg /home/teamspeak/
+
+</blockquote>
 
 
-
-Under development.....
 
 
 
