@@ -11,8 +11,8 @@ First working version, tested only on 3.0.13.6 Teamspeak Server.
 <b>Prerequisites:</b>
 <i>sqlite3</i>
 Install "sqlite3" with your packet manager:
-<blockquote>apt-get install sqlite3<blockquote>
-<blockquote>yum install sqlite3<blockquote>
+<blockquote>apt-get install sqlite3</blockquote>
+<blockquote>yum install sqlite3</blockquote>
 
 <b>Parameters</b>
 
@@ -54,4 +54,4 @@ UPDATE client_properties SET value='b3b3b8e6d973385716fb320b77331f78' WHERE iden
 get md5 to input in table 
 
 md5sum {filename}
-<blockquote>
+</blockquote>
