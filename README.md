@@ -22,3 +22,7 @@ SELECT client_id from clients where client_nickname='tester1';
 set avatar md5hash
 
 UPDATE client_properties SET value='b3b3b8e6d973385716fb320b77331f78' WHERE ident='client_flag_avatar' AND id='3689';
+
+get md5 to input in table 
+
+md5sum {filename}
