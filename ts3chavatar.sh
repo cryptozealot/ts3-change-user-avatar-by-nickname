@@ -5,8 +5,8 @@ picpath=$2
 tspath=$3
 
 #Get UID and ID from database by nickname
-uid=`sqlite3 -batch /home/teamspeak/ts3server.sqlitedb "SELECT client_unique_id from clients where client_nickname='$nickname';"`
-id=`sqlite3 -batch /home/teamspeak/ts3server.sqlitedb "SELECT client_id from clients where client_nickname='$nickname';"`
+uid=`sqlite3 -batch $tspath/ts3server.sqlitedb "SELECT client_unique_id from clients where client_nickname='$nickname';"`
+id=`sqlite3 -batch $tspath/ts3server.sqlitedb "SELECT client_id from clients where client_nickname='$nickname';"`
 
 #Generate avatar filename: base64 decode, hexdump, cut last two, replace letter by letter
 b64decodeduid=`base64 -d <<< $uid`
@@ -26,4 +26,4 @@ cp $picpath $tspath/files/virtualserver_1/internal/$avatarfilename
 echo Replaced $tspath/files/virtualserver_1/internal/$avatarfilename
 
 #Update new md5hash of new pic in database
-sqlite3 -batch /home/teamspeak/ts3server.sqlitedb "UPDATE client_properties SET value='$md5hash' WHERE ident='client_flag_avatar' AND id='$id';"
+sqlite3 -batch $tspath/ts3server.sqlitedb "UPDATE client_properties SET value='$md5hash' WHERE ident='client_flag_avatar' AND id='$id';"
